@@ -98,7 +98,7 @@ Concept, interactivity, and creativity.
 
 ### Weaknesses:
 
-Completing the React / Actual code / offset grid in the background faster.
+Completing the React / Actual code / offset grid in the background faster. How to find a way to thyme (thumbs) up the leaf (affirmation/goal/dream.)
 
 ### Opportunities:
 
@@ -106,4 +106,4 @@ Creating a unique take at new year resolutions, goal setting. There's an opportu
 
 ### Threats:
 
-Not being able to have enough time to complete the MVP.
+Not being able to have enough time to complete the Post-MVP.
