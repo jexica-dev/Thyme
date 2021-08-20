@@ -14,7 +14,7 @@ Thyme is a goal-setting, affirmation, playful, info-graphic tree that and encour
 
 ## Component Hierarchy
 
-![Thyme-component-hierarchy](https://i.imgur.com/StVk9JR.png)
+![Thyme-component-hierarchy](https://i.imgur.com/s8xTd5Q.png)
 
 ## API and Data Sample
 
