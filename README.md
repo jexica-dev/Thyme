@@ -10,11 +10,11 @@ Use this section to describe your final project and perhaps any links to relevan
 
 ## Wireframes
 
-![Thyme-wireframe](https://imgur.com/JXGDANl)
+![Thyme-wireframe](https://i.imgur.com/JXGDANl.png)
 
 ## Component Hierarchy
 
-![Thyme-component-hierarchy](https://imgur.com/StVk9JR)
+![Thyme-component-hierarchy](https://i.imgur.com/StVk9JR.png)
 
 ## API and Data Sample
 
