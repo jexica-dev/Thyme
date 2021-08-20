@@ -6,8 +6,8 @@ An interactive website/app where you comment in your yearly goals, new beliefs/p
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and/or functionality.
 
+Thyme is a goal-setting, affirmation, playful, info-graphic tree that and encourages you to make time to visualize your dreams. You're able to post or edit new ideas, new dreams, new affirmations. You're able to bump up the priority of whichever goal on the organized, thyme-line page. Thyme symbolizes "courage" in Greek/ Roman culture and also has mecidinal properties that alleviate your throat. The thym-ology page gives more herb facts and empowers "thyme" in our everyday lives.
 ## Wireframes
 
 ![Thyme-wireframe](https://i.imgur.com/JXGDANl.png)
