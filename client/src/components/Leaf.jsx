@@ -23,9 +23,10 @@ function Leaf(props) {
           <article>
             <h3>{message}</h3>
 
-            <Link to={`/edit/${leaf.id}`}>e</Link>
-            <br />
             <button onClick={deleteLeaf}>trim</button>
+            <br />
+
+            <Link to={`/edit/${leaf.id}`}>~</Link>
           </article>
         );
       })}
