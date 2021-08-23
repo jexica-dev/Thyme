@@ -1,0 +1,19 @@
+.form-container {
+  display: flex;
+}
+
+.form > div {
+  flex-direction: column;
+  /* padding: 1%; */
+}
+
+label {
+  line-height: 30px;
+  display: block;
+  font-weight: 600;
+}
+
+#name {
+  margin-bottom: -2px;
+  /* padding-top: 10%; */
+}
