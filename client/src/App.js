@@ -4,6 +4,7 @@ import axios from "axios";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Form from "./components/Form";
 import { baseURL, config } from "./services";
+import Leaf from "./components/Leaf";
 
 function App() {
   const [leaves, setLeaves] = useState([]);
@@ -26,26 +27,18 @@ function App() {
         <Link to="/new"> new leaf</Link>
       </nav>
 
-      <Route path="/" exact>
-        <h1>leaves</h1>
-        {leaves.map((leaf, index) => {
-          const { message } = leaf.fields;
-          return (
-            <article>
-              <h3>{message}</h3>
-
-              <Link to={`/edit/${leaf.id}`}>Edit</Link>
-            </article>
-          );
-        })}
-      </Route>
+      <div className="flex-container">
+        <Route path="/" exact>
+          <Leaf leaves={leaves} />
+        </Route>
+      </div>
 
       <Route path="/new">
         <h1>Form</h1>
       </Route>
 
       <Route path="/edit/:id">
-        <Form leaves={leaves} />
+        <Form leaves={leaves} setLeaves={setLeaves} />
       </Route>
 
       <Route path="/new">

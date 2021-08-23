@@ -29,7 +29,7 @@ function Form(props) {
 
   return (
     <div className="form-container">
-      <form onSubmit={handleSubmit} className="form">
+      <form onSubmit={handleSubmit}>
         <h4>leaf</h4>
         <div>
           <label id="name">message</label>
