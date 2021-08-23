@@ -1,22 +1,19 @@
 import "../App.js";
-import {
-  useParams,
-  BrowserRouter as Router,
-  Route,
-  Link,
-} from "react-router-dom";
+import { useParams, Route, Link } from "react-router-dom";
 import axios from "axios";
+import { baseURL, config } from "../services";
 
 function Leaf(props) {
   const params = useParams();
+  console.log(props.leaves.id);
 
   const deleteLeaf = async () => {
-    await axios.delete(`baseURL/${props.leaves.records.id}`);
+    await axios.delete(`${baseURL}/${props.leaves}`, config);
+    props.setToggleFetch(!props.toggleFetch);
   };
-
+  {props.leaves.map((leaf, index) => {
   return (
     <div>
-      <h1>leaves</h1>
       {props.leaves.map((leaf, index) => {
         const { message } = leaf.fields;
         return (

@@ -29,7 +29,11 @@ function App() {
 
       <div className="flex-container">
         <Route path="/" exact>
-          <Leaf leaves={leaves} />
+          <Leaf
+            leaves={leaves}
+            toggleFetch={toggleFetch}
+            setToggleFetch={setToggleFetch}
+          />
         </Route>
       </div>
 
@@ -38,7 +42,7 @@ function App() {
       </Route>
 
       <Route path="/edit/:id">
-        <Form leaves={leaves} setLeaves={setLeaves} />
+        <Form leaves={leaves} />
       </Route>
 
       <Route path="/new">
