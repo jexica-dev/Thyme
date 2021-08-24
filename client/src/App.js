@@ -24,10 +24,14 @@ function App() {
     <div className="body">
       <nav>
         <Link to="/">Home</Link>
-        <br/>
+        <br />
         <Link to="/new"> new leaf</Link>
         {/* <Link to="/">thyme-line</Link> */}
       </nav>
+
+      <div className="thyme-logo">
+        <h1>thyme</h1>
+      </div>
 
       <div className="flex-container">
         <Route path="/" exact>
