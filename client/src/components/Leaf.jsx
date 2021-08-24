@@ -7,11 +7,11 @@ function Leaf(props) {
   const params = useParams();
   console.log(props.leaves.id);
 
-  const deleteLeaf = async () => {
-    await axios.delete(`${baseURL}/${props.leaves}`, config);
+  const deleteLeaf = async (id) => {
+    await axios.delete(`${baseURL}/${id}`, config);
     props.setToggleFetch(!props.toggleFetch);
   };
-  {props.leaves.map((leaf, index) => {
+
   return (
     <div>
       {props.leaves.map((leaf, index) => {
@@ -20,7 +20,13 @@ function Leaf(props) {
           <article>
             <h3>{message}</h3>
 
-            <button onClick={deleteLeaf}>trim</button>
+            <button
+              onClick={() => {
+                deleteLeaf(leaf.id);
+              }}
+            >
+              trim
+            </button>
             <br />
 
             <Link to={`/edit/${leaf.id}`}>~</Link>
@@ -30,5 +36,4 @@ function Leaf(props) {
     </div>
   );
 }
-
 export default Leaf;

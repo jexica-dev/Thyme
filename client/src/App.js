@@ -18,7 +18,7 @@ function App() {
       console.log(resp);
     };
     getLeaves();
-  }, []);
+  }, [toggleFetch]);
 
   return (
     <div className="body">
