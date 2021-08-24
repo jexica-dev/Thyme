@@ -24,8 +24,9 @@ function App() {
     <div className="body">
       <nav>
         <Link to="/">Home</Link>
+        <br/>
         <Link to="/new"> new leaf</Link>
-        <Link to="/">thyme-line</Link>
+        {/* <Link to="/">thyme-line</Link> */}
       </nav>
 
       <div className="flex-container">

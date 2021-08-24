@@ -1,31 +1,57 @@
-article {
-  border: black;
-  font-size: inherit;
-  background-color: black;
-  border-radius: 50%;
-  padding: 1% 5% 1%;
-  margin: 1.5%;
-  text-align: center;
-  width: 100px;
-  height: fit-content;
-}
+/* @keyframes example {
+  from {
+    margin: 5%;
+  }
+  to {
+    margin: 10%;
+  }
+} */
+
+@import url("https://api.fontshare.com/css?f[]=satoshi@300,400,900&display=swap");
 
 h3 {
-  display: block;
-  font-size: 1.17em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: 400;
+  font-size: 1.5em;
+  font-family: "Satoshi", sans-serif;
+  filter: drop-shadow(1.75px -0.125px 0.25px black);
+  color: white;
+  letter-spacing: 0.0125em;
+  font-weight: 600;
+}
+article {
+  font-size: inherit;
+  /* background-color: black; */
+  border-radius: 50%;
+  margin: 0.5%;
+  padding: 3%;
+  text-align: center;
+  width: fit-content;
+  background-image: url(https://i.imgur.com/AIfsGzV.png);
+  background-position: center;
+  background-size: 115%;
+  filter: drop-shadow(1.5px 1.5px 1px black);
+  min-width: 200px;
+  max-width: 400px;
 }
 
 .leaf-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 2.5%;
 }
 
 .leaf-container > div {
   flex: 1 0 0;
-  width: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  article {
+    width: fit-content;
+    margin: 1%;
+    padding: 10%;
+  }
+
+  .leaf-container {
+    flex-direction: column;
+  }
 }
