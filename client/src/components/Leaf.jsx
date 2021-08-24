@@ -2,10 +2,11 @@ import "../App.js";
 import { useParams, Route, Link } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "../services";
+import "./Leaf.css";
 
 function Leaf(props) {
   const params = useParams();
-  console.log(props.leaves.id);
+  //
 
   const deleteLeaf = async (id) => {
     await axios.delete(`${baseURL}/${id}`, config);
@@ -13,7 +14,7 @@ function Leaf(props) {
   };
 
   return (
-    <div>
+    <div className="leaf-container">
       {props.leaves.map((leaf, index) => {
         const { message } = leaf.fields;
         return (
@@ -28,8 +29,8 @@ function Leaf(props) {
               trim
             </button>
             <br />
-
-            <Link to={`/edit/${leaf.id}`}>~</Link>
+            {/* // NEED TO FIX EDIT BUTTON // */}
+            {/* <Link to={`/edit/${leaf.id}`}>~</Link> */}
           </article>
         );
       })}

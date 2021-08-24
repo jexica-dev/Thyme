@@ -25,6 +25,7 @@ function App() {
       <nav>
         <Link to="/">Home</Link>
         <Link to="/new"> new leaf</Link>
+        <Link to="/">thyme-line</Link>
       </nav>
 
       <div className="flex-container">

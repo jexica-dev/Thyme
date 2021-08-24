@@ -1,0 +1,31 @@
+article {
+  border: black;
+  font-size: inherit;
+  background-color: black;
+  border-radius: 50%;
+  padding: 1% 5% 1%;
+  margin: 1.5%;
+  text-align: center;
+  width: 100px;
+  height: fit-content;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 400;
+}
+
+.leaf-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.leaf-container > div {
+  flex: 1 0 0;
+  width: 100px;
+}
