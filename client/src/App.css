@@ -1,13 +1,18 @@
 @import url("https://api.fontshare.com/css?f[]=satoshi@300,400,900&display=swap");
 
+@import url("https://api.fontshare.com/css?f[]=chillax@500,600,700&display=swap");
+
 .thyme-logo {
-  font-weight: 900;
-  font-size: 115px;
+  font-weight: 200;
+  font-size: 100px;
   z-index: 100;
-  margin: -15%;
+  margin: -10%;
   position: fixed;
-  left: 20%;
+  left: 15%;
+  font-family: "Chillax", sans-serif;
+  height: 125px;
 }
+
 .body {
   font-family: "Satoshi", sans-serif;
   font-weight: 900;
@@ -26,6 +31,14 @@ a:link {
   color: black;
   text-decoration: none;
 }
+
+a:visited {
+  color: black;
+}
+a:hover {
+  color: #558b2f;
+}
+
 /* colors are place-holders */
 
 @media only screen and (max-width: 600px) {

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Form from "./components/Form";
 import { baseURL, config } from "./services";
 import Leaf from "./components/Leaf";
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   const [leaves, setLeaves] = useState([]);
@@ -23,15 +24,15 @@ function App() {
   return (
     <div className="body">
       <nav>
-        <Link to="/">Home</Link>
         <br />
         <Link to="/new"> new leaf</Link>
-        {/* <Link to="/">thyme-line</Link> */}
       </nav>
 
-      <div className="thyme-logo">
-        <h1>thyme</h1>
-      </div>
+      <nav className="thyme-logo">
+        <Link to="/" exact>
+          <h1>thyme</h1>
+        </Link>
+      </nav>
 
       <div className="flex-container">
         <Route path="/" exact>
@@ -41,6 +42,10 @@ function App() {
             setToggleFetch={setToggleFetch}
           />
         </Route>
+
+        <ScrollToTop showUnder={160}>
+          <span>UP</span>
+        </ScrollToTop>
       </div>
 
       <Route path="/new">

@@ -21,13 +21,14 @@ function Leaf(props) {
           <article>
             <h3>{message}</h3>
 
-            <button
+            <img
+              width="50px"
+              src="https://i.imgur.com/4AxW1cZ.png"
+              alt="trim"
               onClick={() => {
                 deleteLeaf(leaf.id);
               }}
-            >
-              trim
-            </button>
+            />
             <br />
             {/* // NEED TO FIX EDIT BUTTON // */}
             {/* <Link to={`/edit/${leaf.id}`}>~</Link> */}

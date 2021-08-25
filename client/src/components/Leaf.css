@@ -15,7 +15,7 @@ h3 {
   filter: drop-shadow(1.75px -0.125px 0.25px black);
   color: white;
   letter-spacing: 0.0125em;
-  font-weight: 600;
+  font-weight: 400;
 }
 article {
   font-size: inherit;
@@ -29,8 +29,8 @@ article {
   background-position: center;
   background-size: 115%;
   filter: drop-shadow(1.5px 1.5px 1px black);
-  min-width: 200px;
-  max-width: 400px;
+  min-width: 250px;
+  max-width: 450px;
 }
 
 .leaf-container {
@@ -42,6 +42,11 @@ article {
 
 .leaf-container > div {
   flex: 1 0 0;
+}
+
+img:hover {
+  filter: invert(100%);
+  cursor: grab;
 }
 
 @media only screen and (max-width: 600px) {
