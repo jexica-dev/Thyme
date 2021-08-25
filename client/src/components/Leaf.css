@@ -14,12 +14,11 @@ h3 {
   font-family: "Satoshi", sans-serif;
   filter: drop-shadow(1.75px 0.125px 0.25px black);
   color: white;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.01em;
   font-weight: 900;
 }
 article {
   font-size: inherit;
-  /* background-color: black; */
   border-radius: 50%;
   margin: 0.5%;
   padding: 4%;

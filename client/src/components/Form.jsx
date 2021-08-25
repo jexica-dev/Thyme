@@ -35,21 +35,22 @@ function Form(props) {
   };
 
   return (
-    <div className="form-container">
-      <form onSubmit={handleSubmit}>
-        <h4>leaf</h4>
-        <div>
-          <label id="name">message</label>
-          <textarea
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          />
-        </div>
-        <button class="button is-black" type="submit">
-          add
-        </button>
-      </form>
-    </div>
+    <body>
+      <div className="form-container">
+        <form onSubmit={handleSubmit} class="card">
+          <div>
+            <label id="leaf-label">leaf growth</label>
+            <textarea
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+          </div>
+          <button class="button is-black" type="submit">
+            add
+          </button>
+        </form>
+      </div>
+    </body>
   );
 }
 

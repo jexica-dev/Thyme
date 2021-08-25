@@ -30,9 +30,11 @@ function App() {
       </nav>
       <nav className="leaf-button">
         <br />
-        <button class="button">
-          <Link to="/new"> new leaf</Link>
-        </button>
+        {/* <button class="button"> */}
+        <Link className="leaf-link" to="/new">
+          new leaf
+        </Link>
+        {/* </button> */}
       </nav>
 
       <div className="flex-container">

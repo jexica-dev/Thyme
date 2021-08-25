@@ -10,16 +10,17 @@
   z-index: 100;
   margin: 1%;
   position: fixed;
-  left: 13%;
+  left: 10%;
   font-family: "Chillax", sans-serif;
   height: 125px;
 }
 
-.leaf-button > button {
+.leaf-link {
   margin: 18% 10% 0;
   position: fixed;
-  left: 5%;
+  left: 3%;
   z-index: 10;
+  background-color: transparent;
 }
 
 .body {
@@ -34,6 +35,12 @@
 a:link {
   color: black;
   text-decoration: none;
+  font-family: "Chillax";
+  font-weight: 600;
+  font-size: 45px;
+  background-color: transparent;
+  border: 1px solid;
+  padding: 1%;
 }
 
 a:visited {
@@ -42,6 +49,10 @@ a:visited {
 a:hover {
   opacity: 50%;
   cursor: grab;
+}
+
+button:hover {
+  background-color: white;
 }
 
 /* colors are place-holders */
