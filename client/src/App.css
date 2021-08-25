@@ -3,7 +3,7 @@
 @import url("https://api.fontshare.com/css?f[]=chillax@500,600,700&display=swap");
 
 .thyme-logo {
-  font-weight: 200;
+  font-weight: 500;
   font-size: 100px;
   z-index: 100;
   margin: -10%;
@@ -42,14 +42,15 @@ a:hover {
 /* colors are place-holders */
 
 @media only screen and (max-width: 600px) {
-  .thyme-logo > h1 {
+  h1 {
     font-weight: 900;
-    font-size: 110px;
+    font-size: 80%;
     z-index: 100;
     margin: 10%;
     position: fixed;
-    left: 10%;
+    left: 8%;
   }
+
   .leaf-container {
     flex-direction: column;
   }

@@ -12,10 +12,10 @@
 h3 {
   font-size: 1.5em;
   font-family: "Satoshi", sans-serif;
-  filter: drop-shadow(1.75px -0.125px 0.25px black);
+  filter: drop-shadow(1.75px 0.125px 0.25px black);
   color: white;
-  letter-spacing: 0.0125em;
-  font-weight: 400;
+  letter-spacing: 0.05em;
+  font-weight: 700;
 }
 article {
   font-size: inherit;
@@ -50,6 +50,10 @@ img:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  /* h3 {
+    font-size: 75vw;
+  } */
+
   article {
     width: fit-content;
     margin: 1%;

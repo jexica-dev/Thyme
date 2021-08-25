@@ -36,7 +36,10 @@ function Form(props) {
       <h4>leaf</h4>
       <div>
         <label id="name">message</label>
-        <input value={message} onChange={(e) => setMessage(e.target.value)} />
+        <textarea
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        />
       </div>
       <button type="submit">add</button>
     </form>
