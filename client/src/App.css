@@ -37,7 +37,7 @@
   text-decoration: none;
   font-family: "Chillax";
   font-weight: 600;
-  font-size: 3.5vw;
+  font-size: 3vw;
   background-color: transparent;
   border: 1px solid;
   padding: 1%;
@@ -60,5 +60,9 @@ button:hover {
 @media only screen and (max-width: 600px) {
   .leaf-container {
     flex-direction: column;
+  }
+
+  .leaf-link:link {
+    font-size: 5vw;
   }
 }
