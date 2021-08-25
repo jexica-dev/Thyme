@@ -11,19 +11,6 @@ function Form(props) {
 
   const params = useParams();
 
-  // NEED TO FIX EDIT __
-
-  // useEffect(() => {
-  //   if (params.id && props.leaves.length > 0) {
-  //     const leafToEdit = props.leaves.find((leaf) => params.id === leaf.id);
-  //     if (leafToEdit) {
-  //       setMessage(leafToEdit.fields.message);
-  //     }
-  //   }
-  // }, [params.id, props.leaves]);
-
-  // NEED TO FIX EDIT ^^^
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newLeaf = {
