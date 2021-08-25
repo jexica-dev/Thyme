@@ -32,17 +32,19 @@ function Form(props) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h4>leaf</h4>
-      <div>
-        <label id="name">message</label>
-        <textarea
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        />
-      </div>
-      <button type="submit">add</button>
-    </form>
+    <div className="form-container">
+      <form onSubmit={handleSubmit}>
+        <h4>leaf</h4>
+        <div>
+          <label id="name">message</label>
+          <textarea
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
+        </div>
+        <button type="submit">add</button>
+      </form>
+    </div>
   );
 }
 

@@ -48,9 +48,7 @@ function App() {
         </ScrollToTop>
       </div>
 
-      <Route path="/new">
-        <h1>Form</h1>
-      </Route>
+      <Route path="/new"></Route>
 
       <Route path="/edit/:id">
         <Form leaves={leaves} />

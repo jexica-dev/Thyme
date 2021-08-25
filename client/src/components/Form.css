@@ -1,11 +1,10 @@
-.form-container {
-  display: flex;
-}
+@import url("https://api.fontshare.com/css?f[]=satoshi@300,400,700,900&display=swap");
 
-.form > div {
-  flex-direction: column;
-  /* padding: 1%; */
-}
+@import "bulma/css/bulma.css";
+
+/* .form-container {
+  display: flex;
+} */
 
 label {
   line-height: 30px;
@@ -13,7 +12,13 @@ label {
   font-weight: 600;
 }
 
-#name {
-  margin-bottom: -2px;
-  /* padding-top: 10%; */
+html {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+}
+
+div .form-container form {
+  border: black;
+  border-width: 3px;
+  margin: 30%;
 }
