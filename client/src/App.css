@@ -4,6 +4,12 @@
 
 @import "bulma/css/bulma.css";
 
+html {
+  background-image: url("https://i.imgur.com/1AGWlJM.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
 .thyme-logo h1 {
   font-weight: 900;
   font-size: 20vw;

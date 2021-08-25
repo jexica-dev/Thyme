@@ -2,3 +2,15 @@ div {
   margin: 0;
   font-weight: 400;
 }
+
+html {
+  background-image: url("https://i.imgur.com/1AGWlJM.jpg");
+  background-size: 175vw;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    background-size: 200vh;
+  }
+}
