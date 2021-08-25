@@ -6,7 +6,7 @@
 
 .thyme-logo h1 {
   font-weight: 900;
-  font-size: 15vw;
+  font-size: 20vw;
   z-index: 100;
   margin: 1%;
   position: fixed;
@@ -16,7 +16,7 @@
 }
 
 .leaf-link {
-  margin: 18% 10% 0;
+  margin: 25% 10% 0;
   position: fixed;
   left: 3%;
   z-index: 10;
@@ -32,12 +32,12 @@
   display: inline-block;
 }
 
-a:link {
+.leaf-link:link {
   color: black;
   text-decoration: none;
   font-family: "Chillax";
   font-weight: 600;
-  font-size: 45px;
+  font-size: 3.5vw;
   background-color: transparent;
   border: 1px solid;
   padding: 1%;
@@ -58,15 +58,6 @@ button:hover {
 /* colors are place-holders */
 
 @media only screen and (max-width: 600px) {
-  h1 {
-    font-weight: 900;
-    font-size: 80%;
-    z-index: 100;
-    margin: 10%;
-    position: fixed;
-    left: 8%;
-  }
-
   .leaf-container {
     flex-direction: column;
   }

@@ -28,13 +28,11 @@ function App() {
           <h1>thyme</h1>
         </Link>
       </nav>
-      <nav className="leaf-button">
+      <nav>
         <br />
-        {/* <button class="button"> */}
-        <Link className="leaf-link" to="/new">
+        <Link className=" leaf-button leaf-link" to="/new">
           new leaf
         </Link>
-        {/* </button> */}
       </nav>
 
       <div className="flex-container">
