@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./Form.css";
@@ -6,6 +6,8 @@ import { baseURL, config } from "../services";
 
 function Form(props) {
   const [message, setMessage] = useState("");
+
+  const history = useHistory();
 
   const params = useParams();
 
@@ -29,6 +31,7 @@ function Form(props) {
     };
     await axios.post(baseURL, { fields: newLeaf }, config);
     props.setToggleFetch(!props.toggleFetch);
+    history.push("/");
   };
 
   return (
@@ -42,7 +45,9 @@ function Form(props) {
             onChange={(e) => setMessage(e.target.value)}
           />
         </div>
-        <button type="submit">add</button>
+        <button class="button is-black" type="submit">
+          add
+        </button>
       </form>
     </div>
   );

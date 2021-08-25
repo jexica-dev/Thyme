@@ -15,6 +15,13 @@
   height: 125px;
 }
 
+.leaf-button > button {
+  margin: 18% 10% 0;
+  position: fixed;
+  left: 5%;
+  z-index: 10;
+}
+
 .body {
   font-family: "Satoshi", sans-serif;
   font-weight: 900;
@@ -22,11 +29,6 @@
 
 .form {
   display: inline-block;
-}
-
-nav > a {
-  display: inline-block;
-  color: black;
 }
 
 a:link {
