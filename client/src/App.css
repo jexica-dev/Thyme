@@ -38,7 +38,8 @@ a:visited {
   color: black;
 }
 a:hover {
-  color: #558b2f;
+  opacity: 50%;
+  cursor: grab;
 }
 
 /* colors are place-holders */

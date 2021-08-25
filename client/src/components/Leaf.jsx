@@ -22,7 +22,7 @@ function Leaf(props) {
             <h3>{message}</h3>
 
             <img
-              width="50px"
+              width="30px"
               src="https://i.imgur.com/4AxW1cZ.png"
               alt="trim"
               onClick={() => {

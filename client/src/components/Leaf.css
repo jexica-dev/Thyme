@@ -50,10 +50,6 @@ img:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  /* h3 {
-    font-size: 75vw;
-  } */
-
   article {
     width: fit-content;
     margin: 1%;
