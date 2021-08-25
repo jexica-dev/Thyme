@@ -61,7 +61,9 @@ div .form-container form {
     font-size: 3vw;
   }
 
-  .card {
-    margin: 15% 0 0;
+  div .form-container form {
+    margin: 40% 3% 0;
+    min-width: 55vw;
+    max-width: 75vw;
   }
 }
