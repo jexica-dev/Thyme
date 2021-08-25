@@ -1,14 +1,16 @@
 @import url("https://api.fontshare.com/css?f[]=satoshi@300,400,900&display=swap");
 
-@import url("https://api.fontshare.com/css?f[]=chillax@500,600,700&display=swap");
+@import url("https://api.fontshare.com/css?f[]=chillax@500,600,700,900&display=swap");
 
-.thyme-logo {
-  font-weight: 500;
-  font-size: 100px;
+@import "bulma/css/bulma.css";
+
+.thyme-logo h1 {
+  font-weight: 900;
+  font-size: 15vw;
   z-index: 100;
-  margin: -10%;
+  margin: 1%;
   position: fixed;
-  left: 15%;
+  left: 13%;
   font-family: "Chillax", sans-serif;
   height: 125px;
 }
