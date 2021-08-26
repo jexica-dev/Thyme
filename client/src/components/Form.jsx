@@ -22,7 +22,7 @@ function Form(props) {
   };
 
   return (
-    <body>
+    <>
       <div className="form-container">
         <form onSubmit={handleSubmit} class="card">
           <div>
@@ -38,7 +38,7 @@ function Form(props) {
           </button>
         </form>
       </div>
-    </body>
+    </>
   );
 }
 
