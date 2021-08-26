@@ -30,6 +30,7 @@ function Thymeline(props) {
             <h5>{newDate} </h5>
             <br />
             <img
+              className="scissors"
               width="27px"
               src="https://i.imgur.com/4AxW1cZ.png"
               alt="trim"
