@@ -17,18 +17,26 @@ function Thymeline(props) {
     <div className="thymeline-container">
       {props.leaves.map((leaf, index) => {
         const { message } = leaf.fields;
+        const { date } = leaf.createdTime;
+        const dateFormat = require("dateformat");
+        const newDate = dateFormat(
+          leaf.createdTime,
+          "ddd, mmmm dS, yyyy, h:MM:ss TT"
+        );
+
         return (
           <article className="thymeline-article">
             <h3>{message}</h3>
-            <h5>{leaf.createdTime}</h5>
+            <h5>{newDate} </h5>
             <br />
-            <Link
+            <img
+              width="27px"
+              src="https://i.imgur.com/4AxW1cZ.png"
+              alt="trim"
               onClick={() => {
                 deleteLeaf(leaf.id);
               }}
-            >
-              trim
-            </Link>
+            />
           </article>
         );
       })}
