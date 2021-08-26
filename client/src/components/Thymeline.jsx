@@ -8,8 +8,8 @@ function Thymeline(props) {
   const params = useParams();
   //
 
-  const thymeUp = async (id) => {
-    await axios.put(`${baseURL}/${id}`, config);
+  const deleteLeaf = async (id) => {
+    await axios.delete(`${baseURL}/${id}`, config);
     props.setToggleFetch(!props.toggleFetch);
   };
 
@@ -24,6 +24,13 @@ function Thymeline(props) {
             <h3>{message}</h3>
             <h5>{time}</h5>
             <br />
+            <Link
+              onClick={() => {
+                deleteLeaf(leaf.id);
+              }}
+            >
+              trim
+            </Link>
           </article>
         );
       })}

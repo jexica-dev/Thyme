@@ -26,12 +26,10 @@ h5 {
 }
 
 .thymeline-article {
-  /* background-image: url(https://i.imgur.com/AIfsGzV.png); */
   border-radius: 0;
   background-position: center;
   background-size: 150%;
-  /* filter: drop-shadow(1.5px 1.5px 1px black); */
-  /* margin: 0.75%; */
+
   padding: 4%;
   border: 0.5px solid white;
   width: 330px;
@@ -46,7 +44,7 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 30% 7% 7%;
+  margin: 25% 7% 7%;
 }
 
 img:hover {
