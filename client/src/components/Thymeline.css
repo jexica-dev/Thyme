@@ -22,7 +22,9 @@ h5 {
   font-family: "Satoshi", sans-serif;
   color: white;
   letter-spacing: 0.01em;
-  font-weight: 900;
+  font-weight: 700;
+  padding-top: 10px;
+  position: right;
 }
 
 .thymeline-article {
@@ -47,6 +49,10 @@ h5 {
   margin: 25% 7% 7%;
 }
 
+img {
+  margin-left: 85%;
+}
+
 img:hover {
   filter: invert(100%);
   cursor: grab;
@@ -63,5 +69,8 @@ img:hover {
   .thymeline-container > div {
     flex-direction: column;
     justify-content: center;
+  }
+  img {
+    width: 5vw;
   }
 }
