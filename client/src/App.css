@@ -6,13 +6,13 @@
 
 .thyme-logo h1 {
   font-weight: 900;
-  font-size: 20vw;
+  font-size: 17vw;
   z-index: 100;
   margin: 1%;
   position: fixed;
   left: 10%;
   font-family: "Chillax", sans-serif;
-  text-shadow: rgba(197, 223, 34, 0.784) 3px 5px 1px;
+  text-shadow: rgba(224, 224, 43, 0.907) 3px 4px 1px;
   color: transparent;
   background-color: black;
   background-clip: text;
