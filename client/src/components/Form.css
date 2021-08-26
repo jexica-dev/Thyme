@@ -19,6 +19,10 @@ label {
   margin: 5% 0 0;
 }
 
+textarea {
+  height: 80px;
+}
+
 html {
   font-family: "Satoshi", sans-serif;
   font-weight: 700;

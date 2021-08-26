@@ -28,6 +28,7 @@ function Form(props) {
           <div>
             <label id="leaf-label">leaf growth</label>
             <textarea
+              placeholder="Sooner or later. Now and then. What thyme?"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
