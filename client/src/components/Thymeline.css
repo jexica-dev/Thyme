@@ -45,7 +45,7 @@ h5 {
 .thymeline-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: right;
+  justify-content: space-evenly;
   margin: 30% 7% 7%;
 }
 
