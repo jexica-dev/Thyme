@@ -1,12 +1,3 @@
-/* @keyframes example {
-  from {
-    margin: 5%;
-  }
-  to {
-    margin: 10%;
-  }
-} */
-
 @import url("https://api.fontshare.com/css?f[]=satoshi@300,400,900&display=swap");
 
 h3 {
@@ -52,7 +43,7 @@ img:hover {
   article .leaf-container {
     height: fit-content;
     margin: 5%;
-    font-size: 2vw;
+    font-size: 5vw;
 
     padding: 5%;
   }
