@@ -12,6 +12,10 @@
   position: fixed;
   left: 10%;
   font-family: "Chillax", sans-serif;
+  text-shadow: rgba(197, 223, 34, 0.784) 3px 5px 1px;
+  color: transparent;
+  background-color: black;
+  background-clip: text;
 }
 
 .leaf-link {
