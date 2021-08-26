@@ -18,7 +18,7 @@ function Thymeline(props) {
       {props.leaves.map((leaf, index) => {
         const { message } = leaf.fields;
         const { date } = leaf.createdTime;
-        const dateFormat = require("dateformat");
+
         const newDate = dateFormat(
           leaf.createdTime,
           "ddd, mmmm dS, yyyy, h:MM:ss TT"
@@ -29,15 +29,13 @@ function Thymeline(props) {
             <h3>{message}</h3>
             <h5>{newDate} </h5>
             <br />
-            <img
-              className="scissors"
-              width="27px"
-              src="https://i.imgur.com/4AxW1cZ.png"
-              alt="trim"
+            <Link
               onClick={() => {
                 deleteLeaf(leaf.id);
               }}
-            />
+            >
+              trim
+            </Link>
           </article>
         );
       })}
