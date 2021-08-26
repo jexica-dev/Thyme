@@ -18,7 +18,7 @@ function Thymeline(props) {
       {props.leaves.map((leaf, index) => {
         const { message } = leaf.fields;
         const { date } = leaf.createdTime;
-
+        const dateFormat = require("dateformat");
         const newDate = dateFormat(
           leaf.createdTime,
           "ddd, mmmm dS, yyyy, h:MM:ss TT"
