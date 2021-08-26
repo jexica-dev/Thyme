@@ -17,7 +17,7 @@ h3 {
   letter-spacing: 0.01em;
   font-weight: 900;
 }
-article {
+.leaf-article {
   font-size: inherit;
   border-radius: 50%;
   margin: 0.75%;
@@ -54,10 +54,6 @@ img:hover {
     margin: 3%;
     font-size: 2.5vw;
     padding: 8%;
-  }
-
-  html {
-    background-size: 200vh;
   }
 
   .leaf-container > div {

@@ -2,33 +2,27 @@ import "../App.js";
 import { useParams, Route, Link } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "../services";
-import "./Leaf.css";
+import "./Thymeline.css";
 
-function Leaf(props) {
+function Thymeline(props) {
   const params = useParams();
   //
 
-  const deleteLeaf = async (id) => {
-    await axios.delete(`${baseURL}/${id}`, config);
+  const thymeUp = async (id) => {
+    await axios.put(`${baseURL}/${id}`, config);
     props.setToggleFetch(!props.toggleFetch);
   };
 
   return (
-    <div className="leaf-container">
+    <div className="thymeline-container">
       {props.leaves.map((leaf, index) => {
+        const { time } = leaf.createdTime;
         const { message } = leaf.fields;
-        return (
-          <article className="leaf-article">
-            <h3>{message}</h3>
 
-            <img
-              width="30px"
-              src="https://i.imgur.com/4AxW1cZ.png"
-              alt="trim"
-              onClick={() => {
-                deleteLeaf(leaf.id);
-              }}
-            />
+        return (
+          <article className="thymeline-article">
+            <h3>{message}</h3>
+            <h5>{time}</h5>
             <br />
           </article>
         );
@@ -36,4 +30,4 @@ function Leaf(props) {
     </div>
   );
 }
-export default Leaf;
+export default Thymeline;

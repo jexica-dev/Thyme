@@ -5,11 +5,6 @@
 /* .form-container {
   display: flex;
 } */
-html {
-  background-image: url("https://i.imgur.com/1AGWlJM.jpg");
-  background-position: center;
-  background-size: 175vw;
-}
 
 label {
   line-height: 30px;

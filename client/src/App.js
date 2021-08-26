@@ -6,6 +6,7 @@ import Form from "./components/Form";
 import { baseURL, config } from "./services";
 import Leaf from "./components/Leaf";
 import ScrollToTop from "react-scroll-to-top";
+import Thymeline from "./components/Thymeline.jsx";
 
 function App() {
   const [leaves, setLeaves] = useState([]);
@@ -23,15 +24,18 @@ function App() {
 
   return (
     <div className="body">
-      <nav className="thyme-logo">
+      <div className="thyme-logo">
         <Link to="/" exact>
           <h1>thyme</h1>
         </Link>
-      </nav>
+      </div>
       <nav>
         <br />
-        <Link className=" leaf-button leaf-link" to="/new">
+        <Link className="leaf-link" to="/new">
           new leaf
+        </Link>
+        <Link className="thymeline" to="/thymeline">
+          thyme-line
         </Link>
       </nav>
 
@@ -44,24 +48,30 @@ function App() {
           />
         </Route>
 
+        <Route path="/thymeline">
+          <Thymeline
+            leaves={leaves}
+            setToggleFetch={setToggleFetch}
+            toggleFetch={toggleFetch}
+          />
+        </Route>
+
+        <Route path="/edit/:id">
+          <Form leaves={leaves} />
+        </Route>
+
+        <Route path="/new">
+          <Form
+            leaves={leaves}
+            setToggleFetch={setToggleFetch}
+            toggleFetch={toggleFetch}
+          />
+        </Route>
+
         <ScrollToTop showUnder={160}>
           <span>UP</span>
         </ScrollToTop>
       </div>
-
-      <Route path="/new"></Route>
-
-      <Route path="/edit/:id">
-        <Form leaves={leaves} />
-      </Route>
-
-      <Route path="/new">
-        <Form
-          leaves={leaves}
-          setToggleFetch={setToggleFetch}
-          toggleFetch={toggleFetch}
-        />
-      </Route>
     </div>
   );
 }
