@@ -84,7 +84,10 @@ button:hover {
     font-size: 5vw;
   }
 
-  .thyme-line:link {
+  .thymeline:link {
     font-size: 5vw;
+    margin: 36.5% 10% 0;
+    position: fixed;
+    left: 3%;
   }
 }
