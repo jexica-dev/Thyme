@@ -4,6 +4,23 @@
 
 @import "bulma/css/bulma.css";
 
+.login-form > #loginName {
+  color: black;
+  text-decoration: none;
+  font-family: "Chillax";
+  font-weight: 600;
+  font-size: 2vw;
+  padding: 0 1% 0;
+  opacity: 50%;
+  border: 1px solid black;
+  margin-top: 13%;
+  left: 73%;
+  z-index: 100;
+  top: 0;
+  width: 15vw;
+  position: fixed;
+}
+
 .thyme-logo h1 {
   font-weight: 900;
   font-size: 17vw;
@@ -17,23 +34,6 @@
   background-color: black;
   background-clip: text;
   top: 0;
-}
-
-.login-form > #loginName {
-  color: black;
-  text-decoration: none;
-  font-family: "Chillax";
-  font-weight: 600;
-  font-size: 2vw;
-  padding: 0 1% 0;
-  opacity: 50%;
-  border: 1px solid black;
-  margin-top: 13%;
-  left: 73%;
-  z-index: 10;
-  top: 0;
-  width: 15vw;
-  position: fixed;
 }
 
 .leaf-link {
