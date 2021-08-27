@@ -2,10 +2,6 @@
 
 @import "bulma/css/bulma.css";
 
-/* .form-container {
-  display: flex;
-} */
-
 label {
   line-height: 30px;
   display: block;

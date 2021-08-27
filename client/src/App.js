@@ -11,6 +11,7 @@ import Thymeline from "./components/Thymeline.jsx";
 function App() {
   const [leaves, setLeaves] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
+  const [loginName, setLoginName] = useState("");
 
   useEffect(() => {
     //GET request
@@ -22,15 +23,28 @@ function App() {
     getLeaves();
   }, [toggleFetch]);
 
+  function loginChange() {
+    setLoginName(document.querySelector("#loginName").value);
+  }
+
   return (
-    <div className="body">
+    <>
+      <>
+        <div className="login-form">
+          <input
+            id="loginName"
+            class="input is-small"
+            onChange={loginChange}
+            placeholder="enter name"
+          ></input>
+        </div>
+      </>
       <div className="thyme-logo">
         <Link to="/" exact>
           <h1>thyme</h1>
         </Link>
       </div>
       <nav>
-        <br />
         <Link className="leaf-link" to="/new">
           new leaf
         </Link>
@@ -43,6 +57,7 @@ function App() {
         <Route path="/" exact>
           <Leaf
             leaves={leaves}
+            loginName={loginName}
             toggleFetch={toggleFetch}
             setToggleFetch={setToggleFetch}
           />
@@ -51,6 +66,7 @@ function App() {
         <Route path="/thymeline">
           <Thymeline
             leaves={leaves}
+            loginName={loginName}
             setToggleFetch={setToggleFetch}
             toggleFetch={toggleFetch}
           />
@@ -72,7 +88,7 @@ function App() {
           <span>UP</span>
         </ScrollToTop>
       </div>
-    </div>
+    </>
   );
 }
 

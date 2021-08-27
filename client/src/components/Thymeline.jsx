@@ -13,11 +13,30 @@ function Thymeline(props) {
     props.setToggleFetch(!props.toggleFetch);
   };
 
+  const sortedLeaves = props.leaves.sort((a, b) => {
+    let aDate = new Date(a.createdTime);
+    let bDate = new Date(b.createdTime);
+
+    if (aDate > bDate) {
+      return 1;
+    } else if (bDate > aDate) {
+      return -1;
+    } else {
+      return 0;
+    }
+  });
+
+  const nameArr = sortedLeaves.filter((leaf) => {
+    if (leaf.fields.loginName.toLowerCase() === props.loginName.toLowerCase()) {
+      return true;
+    }
+    return false;
+  });
+
   return (
     <div className="thymeline-container">
-      {props.leaves.map((leaf, index) => {
+      {nameArr.map((leaf, index) => {
         const { message } = leaf.fields;
-        const { date } = leaf.createdTime;
         const dateFormat = require("dateformat");
         const newDate = dateFormat(
           leaf.createdTime,
@@ -28,14 +47,16 @@ function Thymeline(props) {
           <article className="thymeline-article">
             <h3>{message}</h3>
             <h5>{newDate} </h5>
-            <br />
-            <Link
+
+            <img
+              id="scissors"
+              width="25px"
+              src="https://i.imgur.com/4AxW1cZ.png"
+              alt="trim"
               onClick={() => {
                 deleteLeaf(leaf.id);
               }}
-            >
-              trim
-            </Link>
+            />
           </article>
         );
       })}

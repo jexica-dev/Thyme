@@ -13,9 +13,17 @@ function Leaf(props) {
     props.setToggleFetch(!props.toggleFetch);
   };
 
+  // create a new array
+  const nameArr = props.leaves.filter((leaf) => {
+    if (leaf.fields.loginName.toLowerCase() === props.loginName.toLowerCase()) {
+      return true;
+    }
+    return false;
+  });
+
   return (
     <div className="leaf-container">
-      {props.leaves.map((leaf, index) => {
+      {nameArr.map((leaf, index) => {
         const { message } = leaf.fields;
         return (
           <article className="leaf-article">

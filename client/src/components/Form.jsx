@@ -13,8 +13,11 @@ function Form(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const loginName = document.querySelector("#loginName").value;
+
     const newLeaf = {
       message,
+      loginName,
     };
     await axios.post(baseURL, { fields: newLeaf }, config);
     props.setToggleFetch(!props.toggleFetch);
