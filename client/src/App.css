@@ -11,7 +11,7 @@
   font-weight: 600;
   font-size: 2vw;
   padding: 0 1% 0;
-  opacity: 50%;
+  opacity: 0.5;
   border: 1px solid black;
   margin-top: 13%;
   left: 73%;
@@ -91,7 +91,7 @@ a:visited {
   color: black;
 }
 a:hover {
-  opacity: 50%;
+  opacity: 0.5;
   cursor: grab;
 }
 

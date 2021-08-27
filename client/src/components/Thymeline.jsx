@@ -17,9 +17,9 @@ function Thymeline(props) {
     let aDate = new Date(a.createdTime);
     let bDate = new Date(b.createdTime);
 
-    if (aDate > bDate) {
+    if (aDate < bDate) {
       return 1;
-    } else if (bDate > aDate) {
+    } else if (bDate < aDate) {
       return -1;
     } else {
       return 0;
