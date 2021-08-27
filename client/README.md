@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Thyme
 
-## Available Scripts
+An interactive website/app where you comment in your goals, new beliefs/positive affirmations, and notes to self.
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+Thyme is a goal-setting, playful, info-graphic tree that and encourages you to make time to visualize your bucket list or reminders. You're able to "leaf a note" or trim your leaves.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Wireframes
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Thyme-wireframe](https://i.imgur.com/rOceIFD.png)
 
-### `npm test`
+## Component Hierarchy
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Thyme-component-hierarchy](https://i.imgur.com/FFZn7fx.png)
 
-### `npm run build`
+## API and Data Sample
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Airtable API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```json
+{
+  "records": [
+    {
+      "id": "rec1MxWlNpa2hTxm7",
+      "fields": {
+        "message": "Complete code bootcamp."
+      },
+      "createdTime": "2021-08-20T04:54:40.000Z"
+    },
+    {
+      "id": "recSRrJd1OAHr1rSg",
+      "fields": {
+        "message": "Build a plant box for porch herb garden."
+      },
+      "createdTime": "2021-08-20T04:54:40.000Z"
+    },
+    {
+      "id": "rec4pAIEWBOqmwBCa",
+      "fields": {
+        "message": "Meditate 15, Skate 30."
+      },
+      "createdTime": "2021-08-20T04:54:40.000Z"
+    }
+  ],
+  "offset": "rec4pAIEWBOqmwBCa"
+}
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### MVP/PostMVP
 
-### `npm run eject`
+#### MVP
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Create an API using Airtable.
+- User will add an affirmation to the form and the message will appear on the home page.
+- Post (leaf) view and delete.
+- Get media queries to render appropriately.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### PostMVP
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Add a second page: Thymeline: which puts the notes in order chronologically.
+- Put an input that renders notes for that specific person.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Project Schedule
 
-## Learn More
+| Day       | Deliverable                                        | Status     |
+| --------- | -------------------------------------------------- | ---------- |
+| Aug 20    | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
+| Aug 20    | Project Approval                                   | Complete   |
+| Aug 21    | Pseudocode / HTML Structure / Start Components     | Incomplete |
+| Aug 21    | API Requests / Postman                             | Complete   |
+| Aug 23    | React Components / GET POST DELETE                 | Complete   |
+| Aug 24    | Pseudocode to actual code                          | Complete   |
+| Aug 24    | Initial Clickable Model                            | Complete   |
+| Aug 24 25 | MVP Complete                                       | Complete   |
+| Aug 25    | Post - MVP                                         | Complete   |
+| Aug 27    | Presentations                                      | Complete   |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Timeframes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Component                      | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------------------ | :------: | :------------: | :-----------: | :---------: |
+| Adding Form / Leaf / Thymeline |    H     |      5hrs      |     7hrs      |    7hrs     |
+| Working with API               |    H     |      4hrs      |     4hrs      |    4hrs     |
+| Working with CSS               |    H     |      4hrs      |     5hrs      |    5hrs     |
+| Total                          |    H     |     13hrs      |     16hrs     |    16hrs    |
 
-### Code Splitting
+## SWOT Analysis
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Strengths:
 
-### Analyzing the Bundle Size
+Concept, creativity, time management.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Weaknesses:
 
-### Making a Progressive Web App
+Completing the React - real code quicker and getting flexbox to move how I desire. How to get the posts to be in chronological order.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Opportunities:
 
-### Advanced Configuration
+Creating a unique take at goal setting, notes to self, new year resolutions. There's an opportunity to be playful with CSS.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Threats:
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Not being able to have enough time to complete the Post-MVP.

@@ -14,11 +14,12 @@
   opacity: 0.5;
   border: 1px solid black;
   margin-top: 13%;
-  left: 73%;
-  z-index: 100;
-  top: 0;
   width: 15vw;
   position: fixed;
+  left: 73%;
+
+  top: 0;
+  z-index: 100;
   background-color: #ffffff90;
 }
 
@@ -116,5 +117,14 @@ button:hover {
     margin: 36.5% 10% 0;
     position: fixed;
     left: 3%;
+  }
+
+  .login-form > #loginName {
+    margin-top: 48%;
+    width: 19vw;
+    height: 5.75vh;
+    position: fixed;
+    left: 25%;
+    font-size: 2.25vh;
   }
 }
