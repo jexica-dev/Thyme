@@ -2,6 +2,8 @@
 
 ## Thyme
 
+https://thyme-app.netlify.app/
+
 An interactive website/app where you comment in your goals, new beliefs/positive affirmations, and notes to self.
 
 ## Project Description
