@@ -2,11 +2,13 @@
 
 ## Thyme
 
-An interactive website/app where you comment in your yearly goals, new beliefs/positive affirmations, and new ideas.
+https://thyme-app.netlify.app/
+
+An interactive website/app where you comment in your goals, new beliefs/positive affirmations, and notes to self.
 
 ## Project Description
 
-Thyme is a goal-setting, affirmation, playful, info-graphic tree that and encourages you to make time to visualize your dreams. You're able to post or edit new ideas, new dreams, new affirmations. You're able to bump up the priority of whichever goal on the organized, thyme-line page. Thyme symbolizes "courage" in Greek/ Roman culture and also has mecidinal properties that alleviate your throat. The thym-ology page gives more herb facts and empowers "thyme" in our everyday lives.
+Thyme is a goal-setting, playful, info-graphic tree that and encourages you to make time to visualize your bucket list or reminders. You're able to "leaf a note" or trim your leaves.
 
 ## Wireframes
 
@@ -51,19 +53,17 @@ Airtable API
 
 ### MVP/PostMVP
 
-<!-- The functionality will then be divided into two separate lists: MVP and PostMVP. Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion. -->
-
 #### MVP
 
 - Create an API using Airtable.
 - User will add an affirmation to the form and the message will appear on the home page.
 - Post (leaf) view and delete.
+- Get media queries to render appropriately.
 
 #### PostMVP
 
-- Add second API for about page with thyme information.
-- Add some animations.
-- User can give posts a thyme (thumbs) up.
+- Add a second page: Thymeline: which puts the notes in order chronologically.
+- Put an input that renders notes for that specific person.
 
 ## Project Schedule
 
@@ -72,37 +72,36 @@ Airtable API
 | Aug 20    | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
 | Aug 20    | Project Approval                                   | Complete   |
 | Aug 21    | Pseudocode / HTML Structure / Start Components     | Incomplete |
-| Aug 21    | API Requests / Postman                             | Incomplete |
-| Aug 23    | React Components / GET POST DELETE                 | Incomplete |
-| Aug 24    | Pseudocode to actual code                          | Incomplete |
-| Aug 24    | Initial Clickable Model                            | Incomplete |
-| Aug 24 25 | MVP Complete                                       | Incomplete |
-| Aug 25    | Post - MVP                                         | Incomplete |
-| Aug 27    | Presentations                                      | Incomplete |
+| Aug 21    | API Requests / Postman                             | Complete   |
+| Aug 23    | React Components / GET POST DELETE                 | Complete   |
+| Aug 24    | Pseudocode to actual code                          | Complete   |
+| Aug 24    | Initial Clickable Model                            | Complete   |
+| Aug 24 25 | MVP Complete                                       | Complete   |
+| Aug 25    | Post - MVP                                         | Complete   |
+| Aug 27    | Presentations                                      | Complete   |
 
 ## Timeframes
 
-| Component        | Priority | Estimated Time | Time Invested | Actual Time |
-| ---------------- | :------: | :------------: | :-----------: | :---------: |
-| Adding Form      |    H     |      4hrs      |     xhrs      |    xhrs     |
-| Working with API |    H     |      4hrs      |     xhrs      |    xhrs     |
-| Total            |    H     |      8hrs      |     xhrs      |    xhrs     |
+| Component                      | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------------------ | :------: | :------------: | :-----------: | :---------: |
+| Adding Form / Leaf / Thymeline |    H     |      5hrs      |     7hrs      |    7hrs     |
+| Working with API               |    H     |      4hrs      |     4hrs      |    4hrs     |
+| Working with CSS               |    H     |      4hrs      |     5hrs      |    5hrs     |
+| Total                          |    H     |     13hrs      |     16hrs     |    16hrs    |
 
 ## SWOT Analysis
 
-<!-- // add 1-2 sentences of reflections. -->
-
 ### Strengths:
 
-Concept, interactivity, and creativity.
+Concept, creativity, time management.
 
 ### Weaknesses:
 
-Completing the React / Actual code / offset grid in the background faster. How to find a way to thyme (thumbs) up the leaf (affirmation/goal/dream.)
+Completing the React - real code quicker and getting flexbox to move how I desire. How to get the posts to be in chronological order.
 
 ### Opportunities:
 
-Creating a unique take at new year resolutions, goal setting. There's an opportunity to animate the divs in javascript to make the leaves move.
+Creating a unique take at goal setting, notes to self, new year resolutions. There's an opportunity to be playful with CSS.
 
 ### Threats:
 
