@@ -1,8 +1,8 @@
-import "../App.js";
-import { useParams, Route, Link } from "react-router-dom";
-import axios from "axios";
-import { baseURL, config } from "../services";
-import "./Leaf.css";
+import '../App.js';
+import { useParams, Route, Link } from 'react-router-dom';
+import axios from 'axios';
+import { baseURL, config } from '../services';
+import './Leaf.css';
 
 function Leaf(props) {
   const params = useParams();
@@ -13,14 +13,16 @@ function Leaf(props) {
     props.setToggleFetch(!props.toggleFetch);
   };
 
-  // create a new array
+  // create a new array - checking before filtering
   const nameArr = props.leaves.filter((leaf) => {
+    if (!leaf.fields || !leaf.fields.loginName || !props.loginName) {
+      return false;
+    }
     if (leaf.fields.loginName.toLowerCase() === props.loginName.toLowerCase()) {
       return true;
     }
     return false;
   });
-
   return (
     <div className="leaf-container">
       {nameArr.map((leaf, index) => {
